@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | ELEGANCE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ELEGANCE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon active"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cart-section">
+        <h1>Your Shopping Cart</h1>
+        
+        <div class="cart-container">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+                <div class="empty-cart-message">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Your cart is empty</p>
+                    <a href="shop.html" class="btn">Continue Shopping</a>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span class="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping</span>
+                    <span class="shipping">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tax</span>
+                    <span class="tax">$0.00</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span class="total-price">$0.00</span>
+                </div>
+                
+                <div class="promo-code">
+                    <input type="text" placeholder="Promo Code">
+                    <button class="btn-secondary">Apply</button>
+                </div>
+                
+                <button class="btn checkout-btn" disabled>Proceed to Checkout</button>
+                
+                <div class="payment-methods">
+                    <p>We Accept</p>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="you-may-like">
+        <h2>You May Also Like</h2>
+        <div class="product-slider">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80" alt="Classic White Shirt">
+                    <div class="product-actions">
+                        <button class="add-to-cart" data-id="1"><i class="fas fa-shopping-bag"></i></button>
+                        <button class="quick-view" data-id="1"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <h3>Classic White Shirt</h3>
+                <p class="price">$59.99</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Slim Fit Jeans">
+                    <div class="product-actions">
+                        <button class="add-to-cart" data-id="2"><i class="fas fa-shopping-bag"></i></button>
+                        <button class="quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <h3>Slim Fit Jeans</h3>
+                <p class="price">$89.99</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80" alt="Leather Jacket">
+                    <div class="product-actions">
+                        <button class="add-to-cart" data-id="3"><i class="fas fa-shopping-bag"></i></button>
+                        <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <h3>Leather Jacket</h3>
+                <p class="price">$199.99</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ELEGANCE</h3>
+                <p>Premium clothing for the modern individual. Elevate your style with our timeless pieces.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, New York, NY 10001</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@elegance.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ELEGANCE. All rights reserved.</p>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
