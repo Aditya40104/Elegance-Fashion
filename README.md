@@ -1,11 +1,6 @@
-
-<div align="center">
-	<img src="image.png" alt="Elegance Fashion Logo" width="80"/>
-  
-	# Elegance Fashion
-  
-	<i>Modern, stylish e-commerce experience for fashion lovers</i>
-</div>
+<img src="image.png" alt="Elegance Fashion Logo">  
+##Elegance Fashion
+<i>Modern, stylish e-commerce experience for fashion lovers</i>
 
 ---
 
