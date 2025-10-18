@@ -1,6 +1,6 @@
 
 <div align="center">
-	<img src="https://img.icons8.com/ios-filled/100/000000/fashion.png" alt="Elegance Fashion Logo" width="80"/>
+	<img src="image.png" alt="Elegance Fashion Logo" width="80"/>
   
 	# Elegance Fashion
   
