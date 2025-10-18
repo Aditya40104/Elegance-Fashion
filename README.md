@@ -1,5 +1,5 @@
 <img src="image.png" alt="Elegance Fashion Logo">  
-##Elegance Fashion
+<b>Elegance Fashion</b>
 <i>Modern, stylish e-commerce experience for fashion lovers</i>
 
 ---
